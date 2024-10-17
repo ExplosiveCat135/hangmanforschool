@@ -157,7 +157,7 @@ def main():
         playerguess = input('Guess a letter: ')
         while len(playerguess) != 1 or not playerguess.isalpha():
             playerguess = input('Invalid input. Guess a single letter: ')
-        game.guess(playerguess)
+        game.guess(playerguess.lower())
     if input('Play again? (y/n) ') == 'y':
         main()
 
