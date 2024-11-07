@@ -125,6 +125,7 @@ class Game:
                 for i, l in enumerate(self.word):
                     if l == letter:
                         self.wordstate[i] = letter
+                self.lettersguessed.append(letter)
             elif letter in self.wordstate or letter in self.lettersguessed:
                 print('Letter already guessed. Try again.')
         else:
